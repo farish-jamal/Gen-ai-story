@@ -1,0 +1,1 @@
+export const menuItems = ["Features", "Changelog", "Pricing", "Support"]
