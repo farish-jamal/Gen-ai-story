@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
         <ul className="flex items-center justify-center gap-6 w-full">
           {menuItems.map((item) => {
             return (
-              <li key={Math.random()} className="text-sm">
+              <li key={Math.random()} className="text-sm cursor-pointer">
                 {item}
               </li>
             );
