@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { AspectRatio } from "./ui/aspect-ratio";
 import banner from "../assets/banner.png";
+import { Link } from "react-router";
 
 const Banner: React.FC = () => {
   return (
@@ -24,9 +25,11 @@ const Banner: React.FC = () => {
           Let your thoughts take flight, and we'll be the wind beneath their
           wings, <br /> transforming them into stories that soar 🚀
         </p>
-        <Button className="w-32">
-          Explore <ArrowRight />
-        </Button>
+        <Link to="/my-workspace">
+          <Button className="w-32 flex items-center gap-2">
+            Explore <ArrowRight />
+          </Button>
+        </Link>
       </div>
       <div className="w-[60%] mt-20">
         <AspectRatio ratio={16 / 9}>
