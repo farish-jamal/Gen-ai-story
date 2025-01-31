@@ -33,7 +33,18 @@ export const fileData = [
   {
     id: "folder-3",
     name: "Historical Fiction",
-    stories: [],
+    stories: [
+      {
+        id: "file-2",
+        title: "The Silent Watcher",
+        selected: false,
+      },
+      {
+        id: "file-3",
+        title: "The Haunting of Willow Creek",
+        selected: false,
+      },
+    ],
   },
   {
     id: "folder-4",
