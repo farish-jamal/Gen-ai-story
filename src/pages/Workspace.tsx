@@ -1,13 +1,14 @@
 import WorkspaceLeft from "@/components/WorkspaceLeft";
 import React from "react";
 import { fileData } from "@/dumps/dummySidebar";
+import WorkspaceMiddle from "@/components/WorkspaceMiddle";
 
 const Workspace: React.FC = () => {
   return (
     <div className="w-full h-full flex items-center">
       <WorkspaceLeft fileData={fileData} />
-      <div className="w-[30%] h-[100vh] bg-blue-600">2</div>
-      <div className="w-[55%] h-[100vh] bg-green-600">3</div>
+      <WorkspaceMiddle  />
+      <div className="w-[55%] flex flex-col h-screen bg-gray-100">3</div>
     </div>
   );
 };
