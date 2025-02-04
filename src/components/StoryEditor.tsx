@@ -55,7 +55,7 @@ export default function StoryEditor() {
   return (
     <div
       ref={editorRef}
-      className="h-[79vh] w-full bg-gray-100 text-gray-900 font-serif p-6 overflow-y-auto border-2 border-gray-300 rounded-2xl shadow-lg leading-relaxed"
+      className="h-[79vh] w-full bg-gray-100 text-gray-900 font-serif p-6 overflow-y-auto shadow-lg leading-relaxed"
     >
       {lines.map((line, index) => (
         <motion.div
