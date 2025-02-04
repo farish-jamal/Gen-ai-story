@@ -3,9 +3,9 @@ import { progressMessages } from "@/constants/terminal";
 import { TerminalIcon } from "lucide-react";
 
 export default function Terminal() {
-  const [lines, setLines] = useState([]);
+  const [lines, setLines] = useState<string[]>([]);
   const [isVisible, setIsVisible] = useState(true);
-  const terminalRef = useRef(null);
+  const terminalRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let index = 0;
