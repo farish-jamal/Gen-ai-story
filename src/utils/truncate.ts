@@ -1,6 +1,6 @@
-export const truncateString = (str: string): string => {
-  if (str.length > 15) {
-    return `${str.slice(0, 15)}...`;
+export const truncateString = (str: string, length: number): string => {
+  if (str.length > length) {
+    return `${str.slice(0, length)}...`;
   }
   return str;
 };

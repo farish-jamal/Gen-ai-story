@@ -1,6 +1,7 @@
 import { Copy, FolderUp, Redo2, Save, Share2, Undo2 } from "lucide-react";
 import React from "react";
 import { Button } from "./ui/button";
+import StoryEditor from "./StoryEditor";
 
 const WorkspaceRight: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const WorkspaceRight: React.FC = () => {
           </Button>
         </div>
       </div>
-      <div className="h-[79vh] bg-red-500"></div>
+      <StoryEditor />
       <div className="flex items-center justify-between px-5 mt-3">
         <div className="flex items-center space-x-4">
           <p className="text-gray-500 text-sm">500 words</p>

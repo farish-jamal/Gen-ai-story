@@ -47,7 +47,7 @@ const FileTree: React.FC<FileTreeProps> = ({ fileData }) => {
                   className="relative w-full flex items-center space-x-2 mt-2 py-2 px-4 rounded-md text-gray-100 text-sm cursor-pointer hover:bg-slate-200 hover:text-gray-800"
                 >
                   <FileText className="h-4 w-4" />
-                    <p>{truncateString(story.title)}</p>
+                    <p>{truncateString(story.title, 15)}</p>
                     <EllipsisVertical className="h-3 w-3 absolute right-2" />
                 </div>
               ))}
