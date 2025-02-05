@@ -4,7 +4,7 @@ import { TerminalIcon } from "lucide-react";
 
 export default function Terminal() {
   const [lines, setLines] = useState<string[]>([]);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const terminalRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
